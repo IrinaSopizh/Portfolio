@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 closeElement.addEventListener('click', () => {
     menu.classList.remove('active')
 } );
+
+const   pct = document.querySelectorAll('.skills__progress_pct'),
+        scale = document.querySelectorAll('.skills__progress_scale span');
+
+pct.forEach( (item, i) => {
+    scale[i].style.width = item.innerHTML;
+});

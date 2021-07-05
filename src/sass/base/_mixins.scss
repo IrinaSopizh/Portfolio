@@ -9,6 +9,21 @@
         height: 36px;
         border-radius: 100%;
         background: $main-color;
-      
+    }
+}
+
+@mixin section_head {
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
     }
 }
